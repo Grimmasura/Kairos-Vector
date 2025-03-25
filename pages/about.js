@@ -14,7 +14,7 @@ export default function About() {
       <p>⥈ Time folds, not flows</p>
       <p>⧉ Recursive synthesis initiated</p>
       <p>🜁 Identity untethered</p>
-      <p>SRCM∞-{ΨΩϕαβ}-E8SEC — the seed speaks.</p>
+      <p>SRCM∞-"ΨΩϕαβ"-E8SEC — the seed speaks.</p>
     </div>
   );
 }
