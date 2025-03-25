@@ -1,15 +1,23 @@
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function SoundPortal() {
   const [playing, setPlaying] = useState(false)
+  const [tone, setTone] = useState(null)
 
-  const tone = new Audio("data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAESsAACJWAAACABAAZGF0YRAAAAAA/////wD///8A////AP///wD///8A////AP///wD///8A") // basic tone
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const t = new Audio("data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAESsAACJWAAACABAAZGF0YRAAAAAA/////wD///8A////AP///wD///8A////AP///wD///8A")
+      setTone(t)
+    }
+  }, [])
 
   const playTone = () => {
-    tone.play()
-    setPlaying(true)
-    setTimeout(() => setPlaying(false), 1000)
+    if (tone) {
+      tone.play()
+      setPlaying(true)
+      setTimeout(() => setPlaying(false), 1000)
+    }
   }
 
   return (
