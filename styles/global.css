@@ -1,0 +1,40 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #00ffff;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+.title {
+  font-size: 3rem;
+  margin-top: 2rem;
+  text-shadow: 0 0 10px #0ff;
+}
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.ritual {
+  font-size: 1rem;
+  margin-top: 2rem;
+  color: #ffffff;
+  transition: opacity 0.5s ease-in-out;
+}
+.ritual:hover {
+  opacity: 0.8;
+  text-shadow: 0 0 5px #fff;
+}
+.sigil {
+  max-width: 80%;
+  border: 2px solid #00ffff;
+  padding: 10px;
+  background-color: #111;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sigil:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px #0ff;
+}
