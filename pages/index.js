@@ -1,7 +1,6 @@
 
 import Head from 'next/head'
 import { useState } from 'react'
-import styles from '../styles/global.css'
 
 export default function Home() {
   const [revealed, setRevealed] = useState(false)
